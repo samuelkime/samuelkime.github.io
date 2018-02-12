@@ -1,0 +1,25 @@
+h1{
+    text-align: center;
+    color: cyan;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h3{
+    text-align: center;
+    color: cyan;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+ul {
+    color: greenyellow;
+}
+p {
+    color: greenyellow;
+    text-align: center;
+}
+body{
+    background-image: url(http://www.planwallpaper.com/static/images/6909249-black-hd-background.jpg);
+    background-size: fill;
+    background-attachment: fixed
+}
+.card-text {
+    color: black;
+}
