@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!-- Samuel Kime
+     10/10/23 -->
+<html lang="en">
+<head>
+    <title>Contact Form</title>
+    <meta name="author" content="Samuel Kime" />
+    <meta charset="UTF-8" />
+    <meta name="description" content="Samuel Kime web developer Boise Idaho" />
+    <meta name="keywords" content="client-side server-side C# HTML CSS JavaScript" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+        div {
+            margin: 10px;
+        }
+
+        label {
+            margin-right: 15px;
+            width: 150px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <form action="mailto:samkime@my.cwi.edu?subject=Personal%20Portfolio%20Mail" enctype="text/plain" method="POST">
+        <!-- Group Fields Together, page 104 -->
+        <fieldset>
+        <legend>How do I contact you?</legend>
+            <div>
+                <form name="optin" method="GET" action="process.php">
+                <label for="company">Company:</label>
+                <input type="text" name="company" id="company">
+                </form>
+           </div>>
+           <div>
+                <form name="optin" method="GET" action="process.php">
+                <label for="contact-name">Person to Contact:</label>
+                <input type="text" name="contact-name" id="contact-name">
+                </form>
+            </div>
+            <div>
+                <form name="optin" method="GET" action="process.php">
+                <label for="email-address">Email Address:</label>
+                <input type="email" name="email" id="email" placeholder="Email">
+                </form> 
+            </div>         
+            <div>
+                <form name="optin" method="GET" action="process.php">
+                <label for="phone-number">Phone Number:</label>
+                <input type="phone" name="phone" id="phone" placeholder="000-000-0000">
+                </form>
+            </div>
+        </fieldset>
+
+        <!-- Group Fields Together, page 104 -->
+        <fieldset>
+            <legend>What opportunities are available at your company?</legend>
+            <select name="opportunities" id="opportunities">
+                <option value="Internship">Internship</option>
+                <option value="Part-time">Part-time</option>
+                <option value="Full-time">Full-time</option>
+                <option value="Contract">Contract</option>
+                <option value="Temporary">Temporary</option>
+                <option value="On-Call">On call</option>
+            </select>
+
+            <p>How did you hear about me?</p>
+            <input type="radio" name="heard-about-option" id="linkedin" value="LinkedIn"/>
+                <label for="linkedin">LinkedIn</label>
+            <input type="radio" name="heard-about-option" id="job-fair" value="Job Fair"/>
+                <label for="job-fair">Job Fair</label>
+            <input type="radio" name="heard-about-option" id="cwi-corporate-partner" value="CWI Corporate Partner"/>
+                <label for="cwi-corporate-partner">CWI Corporate Partner</label>
+            <div>
+                <textarea name="" id="" cols="100" rows="10">How should I prepare for the interview?</textarea>
+
+            </div>
+        </fieldset>
+		<input type="submit" id="submit" value="Submit" class="btn">
+     </form>
+</body>
+</html>
