@@ -1,0 +1,34 @@
+header{
+   background-color: #A8D6EB;
+}
+
+h1{
+    font-family: 'Anton';
+}
+
+h2{
+    font-size: 1.5em;
+}
+
+section#value{
+   background-color: #AEF0CC;
+}
+
+section#example{
+    background-color: #E3ADB9;
+}
+
+p#first{
+    text-decoration: none;
+}
+
+p#second{
+    text-decoration: underline;
+}
+
+p#third{
+    text-decoration: overline;
+}
+p#fourth{
+    text-decoration: line-through;
+}
