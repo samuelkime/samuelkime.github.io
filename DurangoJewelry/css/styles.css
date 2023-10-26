@@ -1,0 +1,55 @@
+/* Kevin & Samuel
+10-24-2023*/
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+
+html {
+	background-image: url(..//images/jewelry.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}	
+
+header .title {
+	font-size: 50px;
+	font-family: 'Pacifico', Helvetica, sans-serif;
+	font-style: normal;
+}
+h2 {
+	font-family: 'Roboto';
+}
+header {
+	font-style: italic;
+}
+
+.addrightmargin {
+	float: left;
+	border-radius: 100%;
+	margin-right: 10%;
+	border-radius: 50%;
+}
+
+nav ul {
+list-style-type: none;
+font-size: 1.5em;
+/* Left off on clear float tag on instruction pdf */
+}
+main {
+	background-image: linear-gradient(#FFFFFF, #F0F9E6);
+	padding: 10px;
+	margin: 20px;
+	border-radius: 2em;
+	font-size: 1.25em;
+	font-family: Arial, Helvetica, sans-serif;
+}
+#outerwrapper {	
+border-radius: 15%;
+	background: rgba(243,205,170, 0.4);
+	width: 70%;
+	margin: auto;
+
+}
+footer {
+	font-size: 1em;
+	text-align: center;
+	padding-bottom: 10px;
+}
