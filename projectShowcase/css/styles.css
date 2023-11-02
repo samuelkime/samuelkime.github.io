@@ -1,8 +1,24 @@
 /* css used to target all portfolio web pages */
 /* applies to all web pages to promote consistency       */
     body {
-        background: rgba(210, 223, 250, 0.404);
-        color: #333333;
+        background-image: url(../image/starrySky.jpg);
+        background-repeat: no-repeat;
+        color: hsl(0, 0%, 97%);
         font-size: 1.25rem;
     }
+a:link {
+    color: orangered;
+}
+
+a:visited{
+    color: aqua;
+}
+
+a:hover{
+    color: chartreuse;
+}
+
+a:active{
+    color: yellow;
+}
 
