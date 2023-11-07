@@ -4,24 +4,6 @@ img{
 h2{
 	display: none;
 }
-nav{
-	display: block;
-}
-
-@media screen and (min-width:641px){
-	img{
-		display: block;
-		max-width: 100%;
-	}
-	h2 
-	{ 
-	color: #3399CC; 
-    font-family: Georgia, 'Times New Roman', serif; 
-	}
-	nav > ul{
-		display: inline;
-	}
-}
 
 body 
 { 
@@ -44,8 +26,6 @@ header
 nav {
     background-color: #90C7E3;
     font-weight: bold;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
     margin: 0;
     padding: 0;
 }
@@ -92,4 +72,19 @@ footer
 #contact
 { 
 	font-size: 90%; 
+}
+
+@media screen and (min-width:641px){
+	img{
+		display: block;
+		max-width: 100%;
+	}
+	h2 
+	{ 
+	color: #3399CC; 
+    font-family: Georgia, 'Times New Roman', serif; 
+	}
+	nav ul li{
+		display: inline;
+	}
 }
