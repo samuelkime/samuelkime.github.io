@@ -30,6 +30,9 @@ header
 nav {
     background-color: #90C7E3;
     font-weight: bold;
+}
+
+nav ul {
     margin: 0;
     padding: 0;
 }
