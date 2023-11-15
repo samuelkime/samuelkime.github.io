@@ -1,0 +1,12 @@
+body {
+    background-color: lightsteelblue;
+    color: indigo;
+}
+img {
+    padding: 20px;
+    width: 300px;
+    transition: width .5s ease 0.5s;
+}
+img:hover {
+    width: 375px;
+}
