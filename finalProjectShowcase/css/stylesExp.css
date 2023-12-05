@@ -1,0 +1,44 @@
+/* css used to style experience.html */
+/*   display project examples        */
+
+    .projectExamples {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .projectBox {
+        background-image: conic-gradient(red, yellow, green, blue, black);
+        border: 1px solid #000000;
+        justify-content: space-around;
+        margin: 10px;
+        text-align: center;
+        width: 65%;
+    }
+
+    .projectBox h4.semester {
+        background:#00008833; 
+        color: #FFFFFF;
+        padding: 15px;
+    }
+
+    .projectBox img {
+        margin-bottom: 20px;
+    }
+
+    .projectBox a.button {
+        display: block;
+        width: 40%;
+        margin: 10px auto;
+        color: #FFFFFF;
+        background: #03034633;
+        text-align: center;
+        font-weight: bold;
+        text-decoration: none;
+        border-radius: 15px;
+        padding: 1px;
+    }
+
+    footer {
+        clear: left;
+    }

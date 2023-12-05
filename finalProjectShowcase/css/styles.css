@@ -1,0 +1,86 @@
+/* css used to target all portfolio web pages */
+/* applies to all web pages to promote consistency       */
+@font-face {
+    font-family: 'Rubik';
+    src: url('Rubik-Regular.ttf');
+}
+*{
+    font-family: 'Dhurjati', 'Times New Roman', Times;
+    font-size: 25px;
+}
+body {
+    background-image: url(../image/sunsetMed.jpg);
+    background-repeat: no-repeat;
+    color: hsl(0, 0%, 97%);
+    font-size: 1.25rem;
+}
+main{
+    margin-left: 20px;
+    padding-right: 20px;
+}
+footer{
+    margin-left: 20px;
+}
+
+
+a:link {
+    color: aqua;
+}
+a:visited{
+    color: rgb(244, 88, 250);
+}
+a:hover{
+    color: chartreuse;
+}
+a:active{
+    color: yellow;
+}
+
+
+.firstImage{
+    display: flex;
+    justify-content: center;
+}
+.bannerImage{
+    display: flex;
+    align-self: center;
+}
+
+
+nav ul{
+    display: flex;
+    list-style-position: inside;
+    align-content: space-between;
+    justify-content: center;
+}
+nav ul li{
+    padding-right: 10px;
+}
+
+
+table, th, td, caption{
+    border: 1px solid;
+}
+caption{
+    text-align: center;
+    color: aliceblue;
+    border-color: chartreuse;
+}
+thead{
+    color: aqua;
+    font-family: 'Rubik';
+}
+tbody{
+    color: rgb(164, 67, 255);
+    background-color: rgb(101, 192, 196);
+    font-family: 'Rubik';
+}
+table{
+    width: 100%;
+    color: chartreuse;
+    font-family: 'Rubik';
+}
+
+
+
+

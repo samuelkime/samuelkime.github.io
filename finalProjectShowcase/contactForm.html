@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!-- Samuel Kime
+     12/03/23 -->
+<html lang="en">
+<head>
+    <title>Contact Form</title>
+    <meta name="author" content="Samuel Kime" />
+    <meta charset="UTF-8" />
+    <meta name="description" content="Samuel Kime web developer Boise Idaho" />
+    <meta name="keywords" content="client-side server-side C# HTML CSS JavaScript" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+        div {
+            margin: 10px;
+        }
+
+        label {
+            margin-right: 15px;
+            width: 150px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <form action="mailto:samkime@my.cwi.edu?subject=Personal%20Portfolio%20Mail" enctype="text/plain" method="POST">
+        <!-- Group Fields Together, page 104 -->
+        <fieldset>
+        <legend>How do I contact you?</legend>
+            <div>
+                <label for="company">Company:</label>
+                <input type="text" name="company" id="company">
+            </div>
+            <!-- Person to Contact Select Box, page 97 -->
+            <div>
+                <label for="contact-name">Person to Contact:</label>
+                <input type="text" name="company" id="contact-name">
+            </div>
+            <!-- Email, textbook file rental.html -->	
+            <!--Video 9.9 Building and Testing a Valid Form-->	
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="E-mail">
+            </div>
+            <!-- Phone, textbook file rental.html-->
+            <!--Video 9.9 Building and Testing a Valid Form-->
+            <div>
+                <label for="phone">Phone Number:</label>
+                <input type="email" name="phone" id="phone" placeholder="000-000-0000">
+            </div>
+        </fieldset>
+
+        <!-- Group Fields Together, page 104 -->
+        <fieldset>
+            <legend>What opportunities are available at your company?</legend>
+            <label for="position-type">Type of Position</label>
+            <select name="position" id="position-type">
+                <option value="Internship">Internship</option>
+                <option value="Part-time">Part-time</option>
+                <option value="Full-time">Full-time</option>
+                <option value="Contract">Contract</option>
+                <option value="Temporary">Temporary</option>
+                <option value="On call">On call</option>
+            </select>
+            <p>How did you find me?</p>
+            <input type="radio" name="found-me" id="linkedIn" value="LinkedIn">
+            <label for="linkedIn">LinkedIn</label>
+            <input type="radio" name="found-me" id="job-fair" value="JobFair">
+            <label for="job-fair">Job Fair</label>
+            <input type="radio" name="found-me" id="cwiCorp" value="CWICorpPartner">
+            <label for="cwiCorp">CWI Corporate Partner</label>
+            <div>
+                <textarea name="prepare" id="prepare" cols="100" rows="10" placeholder="How should I prepare for the interview?"></textarea>	
+            </div>
+        </fieldset>
+		<input type="submit" id="submit" value="Submit" class="btn">
+     </form>
+</body>
+</html>
