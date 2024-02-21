@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HenchFinder FAQ</title>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Samuel Kime software developer Boise Idaho" />
+    <meta name="keywords" content="C# server-side HTML5 CSS3 client-side" />
+    <meta name="author" content="Samuel Kime" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Honk">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Play">
+</head>
+<body>
+    <header>
+        <nav>
+            <button onclick='alert("Due to ongoing meddlesome heroes, our site is experiencing technical issues.")'>Hire A Hench</button>
+            <button onclick='navigateToHenchFaq()'>Questions about Henching</button>
+            <h1 id="homenav" onclick='navigateHome()'>HenchFinder.com</h1>
+            <button onclick='alert("Please contact Gotham PD, Metropolis PD, or any other law enforcement agency for more info.")'>I Wanna Be a Hench</button>
+            <button onclick='navigateToContactUs()'>Contact Us</button>
+        </nav>
+    </header>
+    <main>
+        <h1>Frequently Asked Questions</h1>
+        <h3>Click each question to reveal the answer.</h3>
+        <h3 class="ans1" onclick='toggleAnswer("first")'>Will I get to select my villain placement?</h3>
+        <p id='first' style='display: none;'>No, we here at henchfinder have a combined 86,400 seconds of expertise in finding the right hench person for the right villain permanently.<br> 
+                                             Every henchperson that finds their match through us has never needed to reapply after we matched them.</p>
+        <h3 class="ans2" onclick='toggleAnswer("second")'>Isn't it true that henchpeople that apply through your service have a 100% chance of being arrested,<br>
+                                             mostly due to being tracked through this website?</h3>
+        <p id='second' style='display: none;'>What? <br> 
+                                              No, total coincidence.<br> 
+                                              Next question.</p>
+        <h3 class="ans3" onclick='toggleAnswer("third")'>Oh, in that case, where do I sign up?</h3>
+        <p id='third' style='display: none;'>You can use the contact us feature in the top-right of the page, click <a href="henchcontact.html">here</a> to be redirected to the form, or contact one of our outreach <br>
+                                             programs at your local police department. (No, you will not be arrested, we have determined that doing illegal activities in front of police <br>
+                                             officers is the last thing that they would expect.)</p>
+    </main>
+    <footer>
+        <p>This site was made by captured code monkeys forced to build this website. 
+            <br>No Code Monkeys, Henchpeople, Super Villains, or Super heroes were harmed in the making of this fake website.</p>
+    </footer>
+</body>
+<script src="hench_finder.js"></script>
+</html>
