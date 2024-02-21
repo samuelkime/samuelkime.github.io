@@ -1,0 +1,45 @@
+body{
+    background: linear-gradient(to bottom, #4e54c8, #000000);
+    margin: 0;
+    padding: 0;
+}
+header {
+    background: linear-gradient(to bottom, #4e54c8, #8f94fb);
+    padding: 20px;
+    text-align: center;
+    font-family: "Play";
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav button {
+    padding: 10px 20px;
+    background-color: #a222d4;
+    color: rgb(252, 230, 30);
+    border: none;
+    border-radius: 4px;
+    cursor: crosshair;
+    font-family: "Play";
+}
+
+main{
+    text-align: center;
+    font-family: "Honk";
+}
+
+main > h1{
+    font-size: 40px;
+}  
+
+main > h3{
+    font-size: 30px;
+}
+
+footer{
+    padding-top: 100px;
+    text-align: center;
+    color: rgb(252, 230, 30);
+}
