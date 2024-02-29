@@ -11,6 +11,9 @@ function navigateHome() {
     window.location.href = "henchFinder.html";
 }
 
+function navigateToGallery() {
+    window.location.href = "henchgallery.html";
+}
 // FAQ Functions
 function toggleAnswer(id) {
     var answer = document.getElementById(id);
