@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HenchFinder FAQ</title>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Samuel Kime software developer Boise Idaho" />
+    <meta name="keywords" content="C# server-side HTML5 CSS3 client-side" />
+    <meta name="author" content="Samuel Kime" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Honk">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Play">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <button onclick='navigateToHire()'>Hire A Hench</button>
+            <button onclick='navigateToHenchFaq()'>Questions about Henching</button>
+            <h1 id="homenav" onclick='navigateHome()'>HenchFinder.com</h1>
+            <button onclick='navigateToGallery()'>I Wanna Be a Hench</button>
+            <button onclick='navigateToContactUs()'>Contact Us</button>
+        </nav>
+    </header>
+    <form id="appointmentForm">
+        <label for="datePicker">Select a date for your appointment:</label>
+        <input type="text" id="datePicker" name="date" autocomplete="off"><br><br>
+      
+        <div id="additionalDetails" style="display: none;">
+          <label for="numPeople">Number of people:</label>
+          <input type="number" id="numPeople" name="numPeople" min="1"><br><br>
+      
+          <label for="jobDescription">Job description:</label>
+          <textarea id="jobDescription" name="jobDescription"></textarea><br><br>
+        </div>
+      
+        <button type="submit" id="submitBtn" disabled>Submit</button>
+      </form>
+      
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>  
+      <script src="hench_finder.js"></script>   
+</body>
+</html>
