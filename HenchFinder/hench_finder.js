@@ -14,40 +14,92 @@ function navigateHome() {
 function navigateToGallery() {
     window.location.href = "henchgallery.html";
 }
-// FAQ Functions
-function toggleAnswer(id) {
-    var answer = document.getElementById(id);
-    if (answer.style.display === "none") {
-        answer.style.display = "block";
-    } else {
-        answer.style.display = "none";
-    }
+
+function navigateToHire() {
+    window.location.href = "henchHire.html"
 }
+
+// FAQ Functions
+$(document).ready(function() {
+    
+    $('h3').click(function() { 
+      var answer = $(this).next('p');
+      
+      answer.slideToggle();
+  
+      $(this).toggleClass('active-question');
+  
+      if(answer.is(':visible')) {
+        answer.addClass('active-answer');
+      } else {
+        answer.removeClass('active-answer');
+      }
+    });
+  });
 // Contact Form Submission
 function validateAndSubmitForm(event) {
-    event.preventDefault();
-    var nameInput = document.getElementById('name');
-    var emailInput = document.getElementById('email');
-    var messageInput = document.getElementById('message')
-    if(nameInput.value.trim() === '') {
-        alert('Please enter your name.');
-        return false;
-    }
-    if(emailInput.value.trim() === '') {
-        alert('Please enter your email.');
-        return false;
-    }
-    if(messageInput.value.trim() === '') {
-        alert('Message cannot be blank.');
-        return false;
-    }
-    var confirmation = confirm('Are you sure you want to submit the form?');
-    if (confirmation) {
+  event.preventDefault();
+  var nameInput = $('#name');
+  var emailInput = $('#email');
+  var messageInput = $('#message');
+
+  // Regex patterns
+  var namePattern = /^[a-zA-Z ]+$/; // Regex for name
+  var emailPattern = /^[^@]+@[^@]+\.[^@]+$/; // Regex for email format
+
+  // Validation checks
+  if (!namePattern.test(nameInput.val().trim())) {
+    alert('Please enter a valid name.');
+    return false;
+  }
+  if (!emailPattern.test(emailInput.val().trim())) {
+    alert('Please enter a valid email.');
+    return false;
+  }
+  if (messageInput.val().trim() === '') {
+    alert('Message cannot be blank.');
+    return false;
+  }
+
+  // Confirm submission
+  var confirmation = confirm('Are you sure you want to submit the form?');
+  if (confirmation) {
     alert('Data submitted successfully!');
-    } 
-    else {
-        document.getElementById('contactForm').reset();
-    }
-    document.getElementById('contactForm').reset();
-    return true;
+    $('#contactForm').reset();
+  } else {
+    $('#contactForm').reset();
+  }
+  return true;
 }
+
+// Datepicker 
+$(function() {
+    // Initialize the datepicker
+    $('#datePicker').datepicker({
+      minDate: 0, // Disallow past dates
+      onSelect: function() {
+        // When a date is selected, reveal the additional details
+        $('#additionalDetails').show();
+      }
+    });
+  
+    // Check if all fields are filled in to enable the submit button
+    $('#appointmentForm input, #appointmentForm textarea').on('input', function() {
+      var dateSelected = $('#datePicker').val().length > 0;
+      var numPeoplePattern = /^[1-9]\d*$/; // Regex for positive integers
+      var jobDescriptionPattern = /.+/; // Regex for non-empty string
+    
+      var numPeopleValid = numPeoplePattern.test($('#numPeople').val().trim());
+      var jobDescriptionValid = jobDescriptionPattern.test($('#jobDescription').val().trim());
+    
+      // Enable the submit button if all conditions are met
+      $('#submitBtn').prop('disabled', !(dateSelected && numPeopleValid && jobDescriptionValid));
+    });
+  
+    // Handle form submission
+    $('#appointmentForm').submit(function(event) {
+      event.preventDefault();
+      // Perform form submission tasks here
+      alert('Form submitted!');
+    });
+  });
